@@ -15,14 +15,15 @@ const experiences = [
   },
   {
     id: 2,
-    role: 'Freelancer Data Analyst',
+    role: 'Freelancer Data Analyst & Web Developer',
     company: 'Fiverr.com',
     period: 'Aug 2018 - Present',
     description: [
       'Perform end-to-end data analysis on diverse client projects using R, SQL, and Python',
+      'Develop web applications and private projects for clients using React, JavaScript, and TypeScript',
       'Extract actionable insights and provide solutions for business problems',
-      'Build interactive dashboards and data visualizations',
-      'Maintain 5-star rating through quality analysis and timely delivery'
+      'Build interactive dashboards, data visualizations, and responsive web applications',
+      'Maintain high ratings through quality work and timely delivery'
     ]
   },
   {

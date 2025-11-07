@@ -19,7 +19,7 @@ const Footer: FC = () => {
               <FaGithub />
             </a>
             <a 
-              href="https://linkedin.com/in/kelvin-mwaka-muia" 
+              href="https://www.linkedin.com/in/kelvin-mwaka-muia/" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -28,11 +28,11 @@ const Footer: FC = () => {
               <FaLinkedin />
             </a>
             <a 
-              href="https://twitter.com/kelvinmwakamuia" 
+              href="https://x.com/kmwakamuia" 
               target="_blank" 
               rel="noopener noreferrer"
-              aria-label="Twitter"
-              title="Twitter"
+              aria-label="X (Twitter)"
+              title="X (Twitter)"
             >
               <FaTwitter />
             </a>

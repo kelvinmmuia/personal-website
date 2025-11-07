@@ -40,10 +40,10 @@ const Hero: FC<{ id: string }> = ({ id }) => {
           <a href="https://github.com/kelvinmmuia" target="_blank" rel="noopener noreferrer" title="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/kelvin-mwaka-muia" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/kelvin-mwaka-muia/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/kelvinmwakamuia" target="_blank" rel="noopener noreferrer" title="Twitter">
+          <a href="https://x.com/kmwakamuia" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
             <FaTwitter />
           </a>
         </div>
