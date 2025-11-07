@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import profileImage from '../assets/profile.jpg';
 
 const Hero: FC<{ id: string }> = ({ id }) => {
   return (
@@ -9,7 +10,7 @@ const Hero: FC<{ id: string }> = ({ id }) => {
           <div className="hero-image">
             <div className="hero-image-wrapper">
               <img 
-                src="/personal-website/CLS_9492_copy.jpg"
+                src={profileImage}
                 alt="Kelvin Mwaka Muia" 
                 className="hero-profile-image"
               />
