@@ -17,7 +17,7 @@ const projects = [
     description: 'Predictive analysis of Kenyan temperature and rainfall data using timeseries forecasting techniques. Includes data preprocessing, exploratory analysis, and ARIMA/Prophet models for climate prediction.',
     technologies: ['Python', 'R', 'Data Analysis', 'Timeseries', 'Visualization'],
     github: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
-    demo: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
+    demo: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries/blob/main/annfittedvsactualvalues.png',
     image: '/Kenyan_Climate_Data_Timeseries.png'
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     description: 'Mathematical analysis and implementation of the optimal stopping problem (Secretary Problem). Includes house hunting scenarios and decision theory applications with interactive demonstrations.',
     technologies: ['HTML', 'Python', 'Mathematics', 'Statistics', 'Algorithms'],
     github: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
-    demo: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
+    demo: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem/blob/main/Optimal-stopping-problem_gem_files/figure-html/r-visualization-1.png',
     image: '/Optimal_Stopping_Problem.png'
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     description: 'Comprehensive analysis of employment trends in Kenya from 2010-2019. Statistical analysis and visualizations of employment data across sectors and regions.',
     technologies: ['R', 'Python', 'Data Analysis', 'Statistics', 'Visualization'],
     github: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
-    demo: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
+    demo: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019/blob/main/total_estimated_employment.pdf',
     image: '/Kenya_Employment_Analysis.png'
   },
   {
@@ -62,7 +62,7 @@ const projects = [
     description: 'Analysis and visualization of Kenya\'s 2009 and 2019 population and housing census data. Demographic analysis with county-level breakdowns and trend analysis.',
     technologies: ['R', 'Python', 'Data Analysis', 'LaTeX', 'Statistical Modeling'],
     github: 'https://github.com/kelvinmmuia/Kenya_population_and_housing_census_2009_and_2019',
-    demo: 'https://github.com/kelvinmmuia/Kenya_population_and_housing_census_2009_and_2019',
+    demo: 'https://github.com/kelvinmmuia/Kenya_population_and_housing_census_2009_and_2019/blob/main/KPHC_2009_2019.pdf',
     image: '/Kenya_Population_Housing_Census.png'
   },
   {
