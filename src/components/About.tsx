@@ -25,15 +25,6 @@ const About: FC<{ id: string }> = ({ id }) => {
           <span>01.</span> About Me
         </h2>
         <div className="about-content">
-          <div className="about-image">
-            <div className="image-wrapper">
-              <img 
-                src="/personal-website/CLS_9492_copy.jpg"
-                alt="Kelvin Mwaka Muia" 
-                className="profile-image"
-              />
-            </div>
-          </div>
           <div className="about-text">
             <p>
               Hello! I'm Kelvin, a Data Scientist and Data Analyst with a Bachelor of Science in Actuarial Science 

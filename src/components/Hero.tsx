@@ -4,7 +4,17 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const Hero: FC<{ id: string }> = ({ id }) => {
   return (
     <section id={id} className="hero">
-      <div className="container">
+      <div className="container hero-container">
+        <div className="hero-image">
+          <div className="hero-image-wrapper">
+            <img 
+              src="/personal-website/CLS_9492_copy.jpg"
+              alt="Kelvin Mwaka Muia" 
+              className="hero-profile-image"
+            />
+          </div>
+        </div>
+        
         <div className="hero-content">
           <h4 className="greeting">Hi, my name is</h4>
           <h1 className="name">Kelvin Mwaka Muia.</h1>
