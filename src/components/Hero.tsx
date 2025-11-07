@@ -4,45 +4,47 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const Hero: FC<{ id: string }> = ({ id }) => {
   return (
     <section id={id} className="hero">
-      <div className="container hero-container">
-        <div className="hero-image">
-          <div className="hero-image-wrapper">
-            <img 
-              src="/personal-website/CLS_9492_copy.jpg"
-              alt="Kelvin Mwaka Muia" 
-              className="hero-profile-image"
-            />
+      <div className="container">
+        <div className="hero-container">
+          <div className="hero-image">
+            <div className="hero-image-wrapper">
+              <img 
+                src="/personal-website/CLS_9492_copy.jpg"
+                alt="Kelvin Mwaka Muia" 
+                className="hero-profile-image"
+              />
+            </div>
           </div>
-        </div>
-        
-        <div className="hero-content">
-          <h4 className="greeting">Hi, my name is</h4>
-          <h1 className="name">Kelvin Mwaka Muia.</h1>
-          <h2 className="title">Data Scientist & Data Analyst based in Nairobi, Kenya.</h2>
-          <p className="description">
-            I'm a passionate data scientist and analyst with 6+ years of experience building data-driven applications 
-            and interactive visualizations. I specialize in end-to-end data analysis, combining statistical modeling, 
-            machine learning, and modern web technologies to create impactful solutions for real-world problems.
-          </p>
-          <div className="cta-buttons">
-            <a 
-              href="#contact" 
-              className="btn btn-primary"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Get In Touch
-            </a>
-            <a 
-              href="https://github.com/kelvinmmuia" 
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="icon" /> GitHub
-            </a>
+          
+          <div className="hero-content">
+            <h4 className="greeting">Hi, my name is</h4>
+            <h1 className="name">Kelvin Mwaka Muia.</h1>
+            <h2 className="title">Data Scientist & Data Analyst based in Nairobi, Kenya.</h2>
+            <p className="description">
+              I'm a passionate data scientist and analyst with 6+ years of experience building data-driven applications 
+              and interactive visualizations. I specialize in end-to-end data analysis, combining statistical modeling, 
+              machine learning, and modern web technologies to create impactful solutions for real-world problems.
+            </p>
+            <div className="cta-buttons">
+              <a 
+                href="#contact" 
+                className="btn btn-primary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Get In Touch
+              </a>
+              <a 
+                href="https://github.com/kelvinmmuia" 
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="icon" /> GitHub
+              </a>
+            </div>
           </div>
         </div>
         
