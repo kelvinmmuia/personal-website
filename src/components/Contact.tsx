@@ -22,7 +22,7 @@ const Contact: FC<{ id: string }> = ({ id }) => {
     setStatus('sending');
     
     try {
-      const response = await fetch('https://formspree.io/f/xyzpqwer', {
+      const response = await fetch('https://formspree.io/f/xzzypbzy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
