@@ -21,19 +21,29 @@ const Contact: FC<{ id: string }> = ({ id }) => {
     e.preventDefault();
     setStatus('sending');
     
-    // Here you would typically send the form data to your backend
-    // For now, we'll simulate a successful submission
     try {
-      // Replace with actual form submission logic
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Reset status after 5 seconds
-      setTimeout(() => setStatus(''), 5000);
+      const response = await fetch('https://formspree.io/f/xyzpqwer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus(''), 5000);
+      }
     } catch (error) {
       setStatus('error');
-      // Reset status after 5 seconds
       setTimeout(() => setStatus(''), 5000);
     }
   };
