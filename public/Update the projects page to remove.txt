@@ -1,0 +1,42 @@
+Update the projects page to remove the broken links to images using the images stored in the "public" folder, or as described below (some projects are hosted online already). Make the projects page more modern, interactive and more appealing.
+
+Use the following as my avatar for the profile image for me. "C:\Users\USER\CascadeProjects\personal-website\public\CLS_9492_copy.jpg". Use the best practices around handling static images as you will use this below.
+
+1. remove the following from the list of projects on project page; "EmpiricalFinance"; "M-Pesa API Integration", "Kenya Economic Survey Report 2023" from projects, it has nothing currently.
+2. The project "Gapminder Data Visualization" is hosted and is displayed on the link "https://kelvinmwakamuia.shinyapps.io/GapminderDataVisualization/" A snapshot of the website or a preview of the same on my project page would do justice.
+3. Optimal Stopping Problem - "C:\Users\USER\CascadeProjects\personal-website\public\Optimal_Stopping_Problem.png"
+4. SVM Custom Implementation - "C:\Users\USER\CascadeProjects\personal-website\public\SVM_Custom_Implementation.png"
+5. Kenyan Climate Data Timeseries - "C:\Users\USER\CascadeProjects\personal-website\public\Kenyan_Climate_Data_Timeseries.png"
+6. Kenya Employment Analysis - "C:\Users\USER\CascadeProjects\personal-website\public\Kenya_Employment_Analysis.png"
+7. USA Median Income Visualization - Already online at "https://kelvinmwakamuia.shinyapps.io/MedianincomeUSA/"
+8. Kenya Population & Housing Census - "C:\Users\USER\CascadeProjects\personal-website\public\Kenya_Population_Housing_Census.png"
+9. KPHC & Kenyan Counties Data - Already online at "https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/"
+10. TipsyData Blog - Already online at "https://tipsydata.netlify.app/"
+11. You should also add "https://kelvinmwakamuia.shinyapps.io/babynames/" described as;
+{
+Baby names popularity in the USA from 1880 to 2022
+
+https://kelvinmwakamuia.shinyapps.io/babynames/
+
+A dashboard to search for and get suggestions for baby names. Use the sliding and form inputs to specify the years, and get the trend of your favorite name over the years ( R and Rstudio; Shiny package) The data set is provided by the babynames package of R.
+}
+12. Also add "https://cloapp.vercel.app/" a private project hosted on vercel deployed via GitHub. It ca be described as;
+{
+About CLOApp
+CLOApp is a cutting-edge, AI-powered web application designed to revolutionize how educators and institutions manage course learning outcomes, curriculum mapping, and accreditation reporting. Built with modern technology and user experience in mind.
+Our Mission
+Empower educators and institutions to achieve curriculum excellence and accreditation with AI-assisted tools, ensuring transparency, efficiency, and security in educational planning.
+
+Core Values
+🎯 Innovation through AI assistance
+🔒 Privacy and data security
+🌍 Accessibility for all educators
+📊 Data-driven insights
+💡 Continuous improvement
+}
+13. And lastly add "https://code-humanizer.vercel.app/" a private project hosted on vercel and deployed via GitHub. it can be described as;
+{
+Make your AI-generated code undetectable and naturally readable. Perfect for students, developers, and anyone who wants their code to look authentically human-written.
+}
+
+

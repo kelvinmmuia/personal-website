@@ -9,7 +9,7 @@ const projects = [
     technologies: ['Python', 'Machine Learning', 'Scikit-learn', 'NumPy', 'Pandas'],
     github: 'https://github.com/kelvinmmuia/SVM-python-custom',
     demo: 'https://github.com/kelvinmmuia/SVM-python-custom',
-    image: 'https://via.placeholder.com/400x250?text=SVM+Algorithm'
+    image: '/SVM_Custom_Implementation.png'
   },
   {
     id: 2,
@@ -18,101 +18,103 @@ const projects = [
     technologies: ['Python', 'R', 'Data Analysis', 'Timeseries', 'Visualization'],
     github: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
     demo: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
-    image: 'https://via.placeholder.com/400x250?text=Climate+Analysis'
+    image: '/Kenyan_Climate_Data_Timeseries.png'
   },
   {
     id: 3,
-    title: 'Kenya Economic Survey 2023',
-    description: 'Analysis and visualization of Kenyan economic indicators reported by KNBS in 2023. Includes interactive dashboards and statistical summaries of key economic metrics.',
-    technologies: ['Python', 'R', 'Data Visualization', 'SQL', 'Pandas'],
-    github: 'https://github.com/kelvinmmuia/Kenya_Economic_Survey_Report_2023',
-    demo: 'https://github.com/kelvinmmuia/Kenya_Economic_Survey_Report_2023',
-    image: 'https://via.placeholder.com/400x250?text=Economic+Data'
+    title: 'Gapminder Data Visualization',
+    description: 'Global demographic and economic data visualization project. Interactive visualizations of world development indicators including GDP, life expectancy, and population trends. Explore global development patterns through dynamic, interactive dashboards.',
+    technologies: ['R', 'Shiny', 'Data Visualization', 'Plotly', 'Interactive'],
+    github: 'https://github.com/kelvinmmuia/GapminderDataVisualization',
+    demo: 'https://kelvinmwakamuia.shinyapps.io/GapminderDataVisualization/',
+    image: 'https://kelvinmwakamuia.shinyapps.io/GapminderDataVisualization/'
   },
   {
     id: 4,
-    title: 'Gapminder Data Visualization',
-    description: 'Global demographic and economic data visualization project. Interactive visualizations of world development indicators including GDP, life expectancy, and population trends.',
-    technologies: ['R', 'ggplot2', 'Data Visualization', 'Plotly', 'Shiny'],
-    github: 'https://github.com/kelvinmmuia/GapminderDataVisualization',
-    demo: 'https://github.com/kelvinmmuia/GapminderDataVisualization',
-    image: 'https://via.placeholder.com/400x250?text=Gapminder+Viz'
-  },
-  {
-    id: 5,
     title: 'Optimal Stopping Problem',
     description: 'Mathematical analysis and implementation of the optimal stopping problem (Secretary Problem). Includes house hunting scenarios and decision theory applications with interactive demonstrations.',
     technologies: ['HTML', 'Python', 'Mathematics', 'Statistics', 'Algorithms'],
     github: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
     demo: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
-    image: 'https://via.placeholder.com/400x250?text=Optimal+Stopping'
+    image: '/Optimal_Stopping_Problem.png'
   },
   {
-    id: 6,
-    title: 'M-Pesa API Integration',
-    description: 'Django framework integration for M-Pesa payment processing. Implements B2C, C2B, and STK Push functionality based on Safaricom\'s latest APIs for Kenyan mobile money transactions.',
-    technologies: ['Python', 'Django', 'REST API', 'M-Pesa', 'Payment Integration'],
-    github: 'https://github.com/kelvinmmuia/mpesa_api',
-    demo: 'https://github.com/kelvinmmuia/mpesa_api',
-    image: 'https://via.placeholder.com/400x250?text=M-Pesa+API'
-  },
-  {
-    id: 7,
+    id: 5,
     title: 'Kenya Employment Analysis',
     description: 'Comprehensive analysis of employment trends in Kenya from 2010-2019. Statistical analysis and visualizations of employment data across sectors and regions.',
     technologies: ['R', 'Python', 'Data Analysis', 'Statistics', 'Visualization'],
     github: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
     demo: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
-    image: 'https://via.placeholder.com/400x250?text=Employment+Data'
+    image: '/Kenya_Employment_Analysis.png'
   },
   {
-    id: 8,
+    id: 6,
     title: 'USA Median Income Visualization',
     description: 'Interactive geographic visualization of American Community Survey (ACS) median income data across USA counties using mapview and R. Includes choropleth maps and statistical analysis.',
     technologies: ['R', 'mapview', 'Leaflet', 'Data Visualization', 'Geospatial'],
     github: 'https://github.com/kelvinmmuia/MedianincomeUSA',
-    demo: 'https://github.com/kelvinmmuia/MedianincomeUSA',
-    image: 'https://via.placeholder.com/400x250?text=USA+Income+Map'
+    demo: 'https://kelvinmwakamuia.shinyapps.io/MedianincomeUSA/',
+    image: 'https://kelvinmwakamuia.shinyapps.io/MedianincomeUSA/'
   },
   {
-    id: 9,
+    id: 7,
     title: 'Kenya Population & Housing Census',
     description: 'Analysis and visualization of Kenya\'s 2009 and 2019 population and housing census data. Demographic analysis with county-level breakdowns and trend analysis.',
     technologies: ['R', 'Python', 'Data Analysis', 'LaTeX', 'Statistical Modeling'],
     github: 'https://github.com/kelvinmmuia/Kenya_population_and_housing_census_2009_and_2019',
     demo: 'https://github.com/kelvinmmuia/Kenya_population_and_housing_census_2009_and_2019',
-    image: 'https://via.placeholder.com/400x250?text=Census+Data'
+    image: '/Kenya_Population_Housing_Census.png'
   },
   {
-    id: 10,
+    id: 8,
     title: 'KPHC & Kenyan Counties Data',
     description: 'Visualization of Kenyan national and county-level demographic and economic data on interactive Leaflet maps. Includes census data and economic indicators by county.',
     technologies: ['R', 'Leaflet', 'Geospatial', 'Data Visualization', 'Interactive Maps'],
     github: 'https://github.com/kelvinmmuia/KPHC2019andKenyanCountiesData',
-    demo: 'https://github.com/kelvinmmuia/KPHC2019andKenyanCountiesData',
-    image: 'https://via.placeholder.com/400x250?text=Counties+Map'
+    demo: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/',
+    image: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/'
   },
   {
-    id: 11,
-    title: 'Empirical Finance Analysis',
-    description: 'Empirical finance research and analysis using R. Includes financial modeling, portfolio analysis, and quantitative finance applications.',
-    technologies: ['R', 'Finance', 'Quantitative Analysis', 'Statistics', 'Time Series'],
-    github: 'https://github.com/kelvinmmuia/EmpiricalFinance',
-    demo: 'https://github.com/kelvinmmuia/EmpiricalFinance',
-    image: 'https://via.placeholder.com/400x250?text=Finance+Analysis'
+    id: 9,
+    title: 'Baby Names Popularity Dashboard',
+    description: 'A dashboard to search for and get suggestions for baby names. Use the sliding and form inputs to specify the years, and get the trend of your favorite name over the years. Data from 1880 to 2022.',
+    technologies: ['R', 'Shiny', 'Data Visualization', 'Interactive Dashboard', 'Rstudio'],
+    github: 'https://github.com/kelvinmmuia/Babynames',
+    demo: 'https://kelvinmwakamuia.shinyapps.io/babynames/',
+    image: 'https://kelvinmwakamuia.shinyapps.io/babynames/'
   },
   {
-    id: 12,
+    id: 10,
     title: 'TipsyData Blog',
     description: 'Static blog built with R, Hugo, and the Mainroad theme. Data science and analytics content with reproducible examples using R Markdown and Quarto.',
     technologies: ['R', 'Hugo', 'HTML', 'Markdown', 'Static Site Generation'],
     github: 'https://github.com/kelvinmmuia/TipsyData',
-    demo: 'https://github.com/kelvinmmuia/TipsyData',
-    image: 'https://via.placeholder.com/400x250?text=TipsyData+Blog'
+    demo: 'https://tipsydata.netlify.app/',
+    image: 'https://tipsydata.netlify.app/'
+  },
+  {
+    id: 11,
+    title: 'CLOApp - AI Course Learning Outcomes',
+    description: 'An AI-powered web application designed to revolutionize how educators and institutions manage course learning outcomes, curriculum mapping, and accreditation reporting. Built with modern technology and user experience in mind.',
+    technologies: ['React', 'TypeScript', 'AI/ML', 'Web Development', 'Vercel'],
+    github: 'https://github.com/kelvinmmuia',
+    demo: 'https://cloapp.vercel.app/',
+    image: 'https://cloapp.vercel.app/'
+  },
+  {
+    id: 12,
+    title: 'Code Humanizer',
+    description: 'Make your AI-generated code undetectable and naturally readable. Perfect for students, developers, and anyone who wants their code to look authentically human-written.',
+    technologies: ['React', 'TypeScript', 'AI/ML', 'Web Development', 'Vercel'],
+    github: 'https://github.com/kelvinmmuia',
+    demo: 'https://code-humanizer.vercel.app/',
+    image: 'https://code-humanizer.vercel.app/'
   }
 ];
 
 const Projects: FC<{ id: string }> = ({ id }) => {
+  const isImageUrl = (url: string) => url.startsWith('http') && (url.includes('.png') || url.includes('.jpg') || url.includes('.jpeg'));
+
   return (
     <section id={id} className="section projects">
       <div className="container">
@@ -122,8 +124,38 @@ const Projects: FC<{ id: string }> = ({ id }) => {
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
+              <div className="project-image-wrapper">
+                {isImageUrl(project.image) ? (
+                  <a 
+                    href={project.demo} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="project-image-link"
+                  >
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="project-image"
+                      loading="lazy"
+                      onError={(e) => {
+                        const img = e.target as HTMLImageElement;
+                        img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="250"%3E%3Crect fill="%23333" width="400" height="250"/%3E%3Ctext x="50%25" y="50%25" font-size="16" fill="%23999" text-anchor="middle" dy=".3em"%3E' + project.title + '%3C/text%3E%3C/svg%3E';
+                      }}
+                    />
+                  </a>
+                ) : (
+                  <a 
+                    href={project.demo} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="project-image-link project-live-preview"
+                  >
+                    <div className="live-preview-placeholder">
+                      <FiExternalLink size={40} />
+                      <p>Live Preview</p>
+                    </div>
+                  </a>
+                )}
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
@@ -134,19 +166,25 @@ const Projects: FC<{ id: string }> = ({ id }) => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                  >
-                    <FiGithub />
-                  </a>
+                  {project.github && project.github !== 'https://github.com/kelvinmmuia' && (
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="GitHub"
+                      className="project-link"
+                      title="View on GitHub"
+                    >
+                      <FiGithub />
+                    </a>
+                  )}
                   <a 
                     href={project.demo} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="Live Demo"
+                    className="project-link"
+                    title="View Live Demo"
                   >
                     <FiExternalLink />
                   </a>

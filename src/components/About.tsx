@@ -50,7 +50,7 @@ const About: FC<{ id: string }> = ({ id }) => {
           <div className="about-image">
             <div className="image-wrapper">
               <img 
-                src="https://avatars.githubusercontent.com/u/226503422?v=4" 
+                src="/CLS_9492_copy.jpg" 
                 alt="Kelvin Mwaka Muia" 
                 className="profile-image"
               />
