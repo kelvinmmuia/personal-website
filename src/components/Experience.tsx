@@ -3,38 +3,38 @@ import { FC } from 'react';
 const experiences = [
   {
     id: 1,
-    role: 'Data Scientist & Web Developer',
-    company: 'Independent Projects',
-    period: '2023 - Present',
+    role: 'Technical Writer - Data Analyst',
+    company: 'UvoCorp.com',
+    period: 'Nov 2022 - Present',
     description: [
-      'Developed 12+ data science and analytics projects focusing on Kenyan economic and demographic data',
-      'Implemented machine learning algorithms including custom SVM implementations with multiple kernel support',
-      'Built interactive geospatial visualizations using R Leaflet and Python for census and economic data',
-      'Created timeseries forecasting models for climate data prediction using ARIMA and Prophet'
+      'Perform end-to-end data analysis on projects using R, SQL, and Python',
+      'Extract insights and provide data-driven solutions for clients',
+      'Create technical documentation and reports for data analysis projects',
+      'Collaborate with cross-functional teams on data-driven initiatives'
     ]
   },
   {
     id: 2,
-    role: 'Statistical Analysis & Modeling',
-    company: 'Research & Analysis',
-    period: '2023 - Present',
+    role: 'Freelancer Data Analyst',
+    company: 'Fiverr.com',
+    period: 'Aug 2018 - Present',
     description: [
-      'Performed comprehensive statistical analysis on Kenya\'s population, employment, and economic data',
-      'Analyzed 2009 and 2019 census data with county-level demographic breakdowns',
-      'Conducted empirical finance research and quantitative analysis using R',
-      'Built interactive dashboards for economic indicators and employment trends'
+      'Perform end-to-end data analysis on diverse client projects using R, SQL, and Python',
+      'Extract actionable insights and provide solutions for business problems',
+      'Build interactive dashboards and data visualizations',
+      'Maintain 5-star rating through quality analysis and timely delivery'
     ]
   },
   {
     id: 3,
-    role: 'Full-Stack Web Development',
-    company: 'Learning & Development',
-    period: '2023 - Present',
+    role: 'Content Supervisor',
+    company: 'Kenya National Bureau of Statistics',
+    period: 'June 2019 - Aug 2019',
     description: [
-      'Mastered modern web technologies: React, TypeScript, JavaScript, HTML, CSS',
-      'Implemented payment integration systems (M-Pesa API with Django)',
-      'Built responsive web applications with focus on data visualization and user experience',
-      'Deployed applications to GitHub Pages and managed version control with Git'
+      'Trained and oversaw the work of six Enumerators in the Kenya Population and Housing Census 2019',
+      'Ensured data quality and accuracy in census data collection',
+      'Managed field operations in Kilungu Ward, Makueni County',
+      'Contributed to Kenya\'s official demographic data collection'
     ]
   }
 ];

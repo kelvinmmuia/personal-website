@@ -1,8 +1,15 @@
 {
   "name": "personal-website",
   "homepage": "https://kelvinmmuia.github.io/personal-website",
+  "author": {
+    "name": "Kelvin Mwaka Muia",
+    "email": "kelvinmwaka@gmail.com",
+    "phone": "+254728450288",
+    "location": "Nairobi, Kenya",
+    "url": "https://github.com/kelvinmmuia"
+  },
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -36,6 +43,7 @@
     "gh-pages": "^6.1.0",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
+    "terser": "^5.44.1",
     "typescript": "^5.2.2",
     "vite": "^4.4.5"
   }

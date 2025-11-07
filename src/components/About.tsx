@@ -27,17 +27,16 @@ const About: FC<{ id: string }> = ({ id }) => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I'm Kelvin, a data scientist and self-taught web developer with a strong focus on 
-              extracting actionable insights from complex datasets. My journey in tech started with a curiosity 
-              about data analysis and statistical modeling, which evolved into a passion for building 
-              data-driven applications and interactive visualizations.
+              Hello! I'm Kelvin, a Data Scientist and Data Analyst with a Bachelor of Science in Actuarial Science 
+              from Egerton University. My journey in tech started with a curiosity about extracting insights from data, 
+              which evolved into a passion for building data-driven applications and interactive visualizations.
             </p>
             <p>
-              I specialize in combining rigorous data analysis with modern web technologies to create 
-              intelligent applications that solve real-world problems. My expertise spans statistical modeling, 
-              machine learning, geospatial analysis, and full-stack web development. I'm particularly passionate 
-              about Kenyan economic and demographic data, having built several projects analyzing census data, 
-              employment trends, and economic indicators.
+              I specialize in end-to-end data analysis, combining rigorous statistical modeling with modern web technologies 
+              to create intelligent applications that solve real-world problems. With 6+ years of freelance experience on Fiverr 
+              and current work at UvoCorp, I've developed expertise in data wrangling, visualization, machine learning, and 
+              geospatial analysis. I'm particularly passionate about Kenyan economic and demographic data, having contributed 
+              to the Kenya Population and Housing Census 2019 and built several projects analyzing census data and economic indicators.
             </p>
             <p>
               Here are the technologies and tools I work with:

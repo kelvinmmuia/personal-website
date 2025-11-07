@@ -51,9 +51,25 @@ const Contact: FC<{ id: string }> = ({ id }) => {
               Whether you have a project idea, want to collaborate, or just want to chat about data science 
               and web development, feel free to reach out!
             </p>
-            <a href="mailto:kelvinmwakamuia@gmail.com" className="email-link">
-              kelvinmwakamuia@gmail.com
-            </a>
+            
+            <div className="contact-info">
+              <p><strong>Email:</strong></p>
+              <a href="mailto:kelvinmwaka@gmail.com" className="email-link">
+                kelvinmwaka@gmail.com
+              </a>
+              <br />
+              <a href="mailto:kelvinmwakamuia@gmail.com" className="email-link">
+                kelvinmwakamuia@gmail.com
+              </a>
+              
+              <p style={{ marginTop: '20px' }}><strong>Phone:</strong></p>
+              <a href="tel:+254728450288" className="email-link">
+                +254 728 450 288
+              </a>
+              
+              <p style={{ marginTop: '20px' }}><strong>Location:</strong></p>
+              <p style={{ color: '#8892b0' }}>Nairobi, Kenya</p>
+            </div>
           </div>
           
           <form className="contact-form" onSubmit={handleSubmit}>
