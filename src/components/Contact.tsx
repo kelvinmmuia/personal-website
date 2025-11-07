@@ -17,21 +17,17 @@ const Contact: FC<{ id: string }> = ({ id }) => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('sending');
     
     try {
+      const formElement = e.currentTarget;
+      const formDataObj = new FormData(formElement);
+      
       const response = await fetch('https://formspree.io/f/xzzypbzy', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        }),
+        body: formDataObj,
       });
 
       if (response.ok) {
@@ -43,6 +39,7 @@ const Contact: FC<{ id: string }> = ({ id }) => {
         setTimeout(() => setStatus(''), 5000);
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       setStatus('error');
       setTimeout(() => setStatus(''), 5000);
     }
