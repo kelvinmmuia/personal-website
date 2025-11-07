@@ -247,8 +247,8 @@ img {
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
+  grid-template-columns: 0.8fr 1.5fr;
+  gap: 40px;
   align-items: center;
 }
 
@@ -308,12 +308,12 @@ img {
 }
 
 .name {
-  font-size: clamp(32px, 6vw, 60px);
+  font-size: clamp(36px, 7vw, 64px);
   font-weight: 700;
   margin: 0 0 20px 0;
-  line-height: 1.1;
+  line-height: 1.2;
   color: var(--light);
-  white-space: nowrap;
+  max-width: 100%;
 }
 
 .title {
