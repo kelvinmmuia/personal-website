@@ -298,9 +298,17 @@ img {
 /* About Section */
 .about-content {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 50px;
   align-items: center;
+}
+
+.about-image {
+  order: 1;
+}
+
+.about-text {
+  order: 2;
 }
 
 .about-text p {
