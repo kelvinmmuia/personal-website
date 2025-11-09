@@ -109,6 +109,15 @@ const projects = [
     github: 'https://github.com/kelvinmmuia',
     demo: 'https://code-humanizer.vercel.app/',
     image: 'https://code-humanizer.vercel.app/'
+  },
+  {
+    id: 13,
+    title: 'Movie Database Management System',
+    description: 'A comprehensive movie database application built with Streamlit and SQLite. Features include movie catalog management, actor/director relationships, advanced search capabilities, and a beautiful professional UI with blue and gray theme.',
+    technologies: ['Python', 'Streamlit', 'SQLite', 'Database Management', 'Data Visualization'],
+    github: 'https://github.com/kelvinmmuia/MoviesDBapp',
+    demo: 'https://moviesdbapp.streamlit.app/',
+    image: 'https://moviesdbapp.streamlit.app/'
   }
 ];
 
