@@ -5,14 +5,14 @@ const About: FC<{ id: string }> = ({ id }) => {
     'Python',
     'R',
     'SQL',
-    'NoSQL',
     'JavaScript',
     'TypeScript',
     'React',
-    'HTML & CSS',
-    'Machine Learning',
+    'Streamlit',
+    'Shiny',
     'Data Analytics',
     'Data Visualization',
+    'Technical Writing',
     'Jupyter Notebook',
     'Quarto',
     'Git & GitHub',
@@ -27,16 +27,14 @@ const About: FC<{ id: string }> = ({ id }) => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I'm Kelvin, a Data Scientist and Data Analyst with a Bachelor of Science in Actuarial Science 
-              from Egerton University. My journey in tech started with a curiosity about extracting insights from data, 
-              which evolved into a passion for building data-driven applications and interactive visualizations.
+              I am a Nairobi-based data analyst and full-stack data developer with a Bachelor of Science in Actuarial Science
+              from Egerton University. I work at the point where analysis, writing, and implementation meet: cleaning data,
+              explaining what it means, and building the tool or dashboard that makes it usable.
             </p>
             <p>
-              I specialize in end-to-end data analysis, combining rigorous statistical modeling with modern web technologies 
-              to create intelligent applications that solve real-world problems. With 6+ years of freelance experience on Fiverr 
-              and current work at UvoCorp, I've developed expertise in data wrangling, visualization, machine learning, and 
-              geospatial analysis. I'm particularly passionate about Kenyan economic and demographic data, having contributed 
-              to the Kenya Population and Housing Census 2019 and built several projects analyzing census data and economic indicators.
+              My experience spans freelance analytics, UvoCorp technical writing/data analysis, KNBS census field supervision,
+              public-data visualization, and private commercial products such as Kamwifi. I am most useful to teams that need someone
+              who can move from an unclear request to a reproducible analysis, a stakeholder-ready explanation, or a working data-backed app.
             </p>
             <p>
               Here are the technologies and tools I work with:

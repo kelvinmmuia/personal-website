@@ -54,9 +54,8 @@ const Contact: FC<{ id: string }> = ({ id }) => {
         <div className="contact-content">
           <div className="contact-text">
             <p>
-              I'm always interested in connecting with fellow data scientists, developers, and innovators. 
-              Whether you have a project idea, want to collaborate, or just want to chat about data science 
-              and web development, feel free to reach out!
+              I am open to data analyst, BI/reporting, full-stack data app, AI evaluation, consultancy, and contractor roles.
+              The fastest way to reach me is email or phone.
             </p>
             
             <div className="contact-info">
@@ -75,7 +74,7 @@ const Contact: FC<{ id: string }> = ({ id }) => {
               </a>
               
               <p style={{ marginTop: '20px' }}><strong>Location:</strong></p>
-              <p style={{ color: '#8892b0' }}>Nairobi, Kenya</p>
+              <p className="contact-location">Nairobi, Kenya</p>
             </div>
           </div>
           

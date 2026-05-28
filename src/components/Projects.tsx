@@ -1,205 +1,184 @@
 import { FC } from 'react';
-import { FiGithub, FiExternalLink } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, FiFileText } from 'react-icons/fi';
 
-const projects = [
+type Project = {
+  id: number;
+  title: string;
+  summary: string;
+  impact: string;
+  technologies: string[];
+  github?: string;
+  demo?: string;
+  image?: string;
+  proof: 'Public repo' | 'Live app' | 'Private product';
+};
+
+const projects: Project[] = [
   {
     id: 1,
-    title: 'SVM Custom Implementation',
-    description: 'A custom implementation of the Support Vector Machine (SVM) algorithm for regression and classification tasks. Supports Linear, RBF, Polynomial, and Sigmoid kernels with comprehensive documentation and examples.',
-    technologies: ['Python', 'Machine Learning', 'Scikit-learn', 'NumPy', 'Pandas'],
-    github: 'https://github.com/kelvinmmuia/SVM-python-custom',
-    demo: 'https://github.com/kelvinmmuia/SVM-python-custom',
-    image: '/SVM_Custom_Implementation.png'
+    title: 'Kamwifi',
+    summary: 'Commercial WiFi monetization and operations product for hotspot access, customer workflows, and network-admin visibility.',
+    impact: 'Private product proof: founded and built the product architecture, business workflow, and implementation direction. Available to discuss architecture without exposing private code.',
+    technologies: ['Product', 'MikroTik', 'Payments', 'Dashboards', 'Operations'],
+    demo: 'https://kamwifi.co.ke/',
+    proof: 'Private product',
   },
   {
     id: 2,
-    title: 'Kenyan Climate Data Timeseries',
-    description: 'Predictive analysis of Kenyan temperature and rainfall data using timeseries forecasting techniques. Includes data preprocessing, exploratory analysis, and ARIMA/Prophet models for climate prediction.',
-    technologies: ['Python', 'R', 'Data Analysis', 'Timeseries', 'Visualization'],
-    github: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
-    demo: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries/blob/main/annfittedvsactualvalues.png',
-    image: '/Kenyan_Climate_Data_Timeseries.png'
+    title: 'CLOApp - Course Learning Outcomes',
+    summary: 'AI-assisted education workflow for course learning outcomes, curriculum mapping, and accreditation-style reporting.',
+    impact: 'Relevant to EdTech, AI evaluation, structured writing, and data-backed workflow design.',
+    technologies: ['React', 'TypeScript', 'AI workflows', 'Education', 'Vercel'],
+    demo: 'https://cloapp.vercel.app/',
+    proof: 'Live app',
   },
   {
     id: 3,
-    title: 'Gapminder Data Visualization',
-    description: 'Global demographic and economic data visualization project. Interactive visualizations of world development indicators including GDP, life expectancy, and population trends. Explore global development patterns through dynamic, interactive dashboards.',
-    technologies: ['R', 'Shiny', 'Data Visualization', 'Plotly', 'Interactive'],
-    github: 'https://github.com/kelvinmmuia/GapminderDataVisualization',
-    demo: 'https://kelvinmwakamuia.shinyapps.io/GapminderDataVisualization/',
-    image: 'https://kelvinmwakamuia.shinyapps.io/GapminderDataVisualization/'
+    title: 'Movie Database Management System',
+    summary: 'Streamlit and SQLite database application for movie catalog management, relationships, and search workflows.',
+    impact: 'Shows practical data-app development: database modeling, UI workflows, and deployable Python tooling.',
+    technologies: ['Python', 'Streamlit', 'SQLite', 'Data app', 'Search'],
+    github: 'https://github.com/kelvinmmuia/MoviesDBapp',
+    demo: 'https://moviesdbapp.streamlit.app/',
+    proof: 'Live app',
   },
   {
     id: 4,
-    title: 'Optimal Stopping Problem',
-    description: 'Mathematical analysis and implementation of the optimal stopping problem (Secretary Problem). Includes house hunting scenarios and decision theory applications with interactive demonstrations.',
-    technologies: ['HTML', 'Python', 'Mathematics', 'Statistics', 'Algorithms'],
-    github: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
-    demo: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem/blob/main/Optimal-stopping-problem_gem_files/figure-html/r-visualization-1.png',
-    image: '/Optimal_Stopping_Problem.png'
+    title: 'SVM Custom Implementation',
+    summary: 'Support Vector Machine workflows for regression and classification with Linear, RBF, Polynomial, and Sigmoid kernels.',
+    impact: 'Public proof of ML literacy, technical documentation, model evaluation, and Python implementation.',
+    technologies: ['Python', 'Machine Learning', 'NumPy', 'Pandas', 'Model evaluation'],
+    github: 'https://github.com/kelvinmmuia/SVM-python-custom',
+    demo: 'https://github.com/kelvinmmuia/SVM-python-custom',
+    image: '/SVM_Custom_Implementation.png',
+    proof: 'Public repo',
   },
   {
     id: 5,
-    title: 'Kenya Employment Analysis',
-    description: 'Comprehensive analysis of employment trends in Kenya from 2010-2019. Statistical analysis and visualizations of employment data across sectors and regions.',
-    technologies: ['R', 'Python', 'Data Analysis', 'Statistics', 'Visualization'],
-    github: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
-    demo: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019/blob/main/total_estimated_employment.pdf',
-    image: '/Kenya_Employment_Analysis.png'
+    title: 'Kenyan Climate Data Timeseries',
+    summary: 'Forecasting and visualization workflows for Kenyan rainfall and temperature data.',
+    impact: 'Demonstrates preprocessing, exploratory analysis, time-series reasoning, and interpretable reporting.',
+    technologies: ['Python', 'R', 'Forecasting', 'Visualization', 'Data cleaning'],
+    github: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
+    demo: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries/blob/main/annfittedvsactualvalues.png',
+    image: '/Kenyan_Climate_Data_Timeseries.png',
+    proof: 'Public repo',
   },
   {
     id: 6,
-    title: 'USA Median Income Visualization',
-    description: 'Interactive geographic visualization of American Community Survey (ACS) median income data across USA counties using mapview and R. Includes choropleth maps and statistical analysis.',
-    technologies: ['R', 'mapview', 'Leaflet', 'Data Visualization', 'Geospatial'],
-    github: 'https://github.com/kelvinmmuia/MedianincomeUSA',
-    demo: 'https://kelvinmwakamuia.shinyapps.io/MedianincomeUSA/',
-    image: 'https://kelvinmwakamuia.shinyapps.io/MedianincomeUSA/'
+    title: 'KPHC & Kenyan Counties Data',
+    summary: 'Interactive county-level visualization of Kenyan demographic and economic indicators.',
+    impact: 'Strong public-sector data proof: local context, census data, geospatial presentation, and quality-controlled outputs.',
+    technologies: ['R', 'Leaflet', 'Geospatial', 'Public data', 'Dashboards'],
+    github: 'https://github.com/kelvinmmuia/KPHC2019andKenyanCountiesData',
+    demo: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/',
+    image: '/Kenya_Population_Housing_Census.png',
+    proof: 'Live app',
   },
   {
     id: 7,
-    title: 'Kenya Population & Housing Census',
-    description: 'Analysis and visualization of Kenya\'s 2009 and 2019 population and housing census data. Demographic analysis with county-level breakdowns and trend analysis.',
-    technologies: ['R', 'Python', 'Data Analysis', 'LaTeX', 'Statistical Modeling'],
-    github: 'https://github.com/kelvinmmuia/Kenya_population_and_housing_census_2009_and_2019',
-    demo: 'https://github.com/kelvinmmuia/Kenya_population_and_housing_census_2009_and_2019/blob/main/KPHC_2009_2019.pdf',
-    image: '/Kenya_Population_Housing_Census.png'
+    title: 'Kenya Employment Analysis',
+    summary: 'Analysis of employment trends in Kenya from 2010 to 2019 across sectors and reporting outputs.',
+    impact: 'Shows reproducible analysis, data storytelling, and economic-data interpretation.',
+    technologies: ['R', 'Python', 'Statistics', 'Visualization', 'Reporting'],
+    github: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
+    demo: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019/blob/main/total_estimated_employment.pdf',
+    image: '/Kenya_Employment_Analysis.png',
+    proof: 'Public repo',
   },
   {
     id: 8,
-    title: 'KPHC & Kenyan Counties Data',
-    description: 'Visualization of Kenyan national and county-level demographic and economic data on interactive Leaflet maps. Includes census data and economic indicators by county.',
-    technologies: ['R', 'Leaflet', 'Geospatial', 'Data Visualization', 'Interactive Maps'],
-    github: 'https://github.com/kelvinmmuia/KPHC2019andKenyanCountiesData',
-    demo: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/',
-    image: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/'
+    title: 'Optimal Stopping Problem',
+    summary: 'Decision-theory explanation and implementation of the Secretary Problem and house-hunting scenario.',
+    impact: 'Useful proof for technical writing, statistics communication, and AI/data evaluation work.',
+    technologies: ['Statistics', 'Algorithms', 'Explanation', 'HTML', 'Python'],
+    github: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
+    demo: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
+    image: '/Optimal_Stopping_Problem.png',
+    proof: 'Public repo',
   },
-  {
-    id: 9,
-    title: 'Baby Names Popularity Dashboard',
-    description: 'A dashboard to search for and get suggestions for baby names. Use the sliding and form inputs to specify the years, and get the trend of your favorite name over the years. Data from 1880 to 2022.',
-    technologies: ['R', 'Shiny', 'Data Visualization', 'Interactive Dashboard', 'Rstudio'],
-    github: 'https://github.com/kelvinmmuia/Babynames',
-    demo: 'https://kelvinmwakamuia.shinyapps.io/babynames/',
-    image: 'https://kelvinmwakamuia.shinyapps.io/babynames/'
-  },
-  {
-    id: 10,
-    title: 'TipsyData Blog',
-    description: 'Static blog built with R, Hugo, and the Mainroad theme. Data science and analytics content with reproducible examples using R Markdown and Quarto.',
-    technologies: ['R', 'Hugo', 'HTML', 'Markdown', 'Static Site Generation'],
-    github: 'https://github.com/kelvinmmuia/TipsyData',
-    demo: 'https://tipsydata.netlify.app/',
-    image: 'https://tipsydata.netlify.app/'
-  },
-  {
-    id: 11,
-    title: 'CLOApp - AI Course Learning Outcomes',
-    description: 'An AI-powered web application designed to revolutionize how educators and institutions manage course learning outcomes, curriculum mapping, and accreditation reporting. Built with modern technology and user experience in mind.',
-    technologies: ['React', 'TypeScript', 'AI/ML', 'Web Development', 'Vercel'],
-    github: 'https://github.com/kelvinmmuia',
-    demo: 'https://cloapp.vercel.app/',
-    image: 'https://cloapp.vercel.app/'
-  },
-  {
-    id: 12,
-    title: 'Code Humanizer',
-    description: 'Make your AI-generated code undetectable and naturally readable. Perfect for students, developers, and anyone who wants their code to look authentically human-written.',
-    technologies: ['React', 'TypeScript', 'AI/ML', 'Web Development', 'Vercel'],
-    github: 'https://github.com/kelvinmmuia',
-    demo: 'https://code-humanizer.vercel.app/',
-    image: 'https://code-humanizer.vercel.app/'
-  },
-  {
-    id: 13,
-    title: 'Movie Database Management System',
-    description: 'A comprehensive movie database application built with Streamlit and SQLite. Features include movie catalog management, actor/director relationships, advanced search capabilities, and a beautiful professional UI with blue and gray theme.',
-    technologies: ['Python', 'Streamlit', 'SQLite', 'Database Management', 'Data Visualization'],
-    github: 'https://github.com/kelvinmmuia/MoviesDBapp',
-    demo: 'https://moviesdbapp.streamlit.app/',
-    image: 'https://moviesdbapp.streamlit.app/'
-  }
 ];
 
 const Projects: FC<{ id: string }> = ({ id }) => {
-  const isImageUrl = (url: string) => url.startsWith('http') && (url.includes('.png') || url.includes('.jpg') || url.includes('.jpeg'));
+  const getImageSrc = (image: string) => {
+    if (image.startsWith('http')) {
+      return image;
+    }
+
+    return `${import.meta.env.BASE_URL}${image.replace(/^\//, '')}`;
+  };
 
   return (
     <section id={id} className="section projects">
       <div className="container">
         <h2 className="section-title">
-          <span>03.</span> Some Things I've Built
+          <span>03.</span> Selected Work
         </h2>
+        <p className="section-intro">
+          Public repos, live apps, and private commercial work framed around what a hiring team can evaluate: the problem, stack, and proof of delivery.
+        </p>
+
         <div className="projects-grid">
           {projects.map((project) => (
-            <div key={project.id} className="project-card">
+            <article key={project.id} className="project-card">
               <div className="project-image-wrapper">
-                {isImageUrl(project.image) ? (
-                  <a 
-                    href={project.demo} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-image-link"
-                  >
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="project-image"
-                      loading="lazy"
-                      onError={(e) => {
-                        const img = e.target as HTMLImageElement;
-                        img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="250"%3E%3Crect fill="%23333" width="400" height="250"/%3E%3Ctext x="50%25" y="50%25" font-size="16" fill="%23999" text-anchor="middle" dy=".3em"%3E' + project.title + '%3C/text%3E%3C/svg%3E';
-                      }}
-                    />
-                  </a>
+                {project.image ? (
+                  <img
+                    src={getImageSrc(project.image)}
+                    alt={`${project.title} screenshot`}
+                    className="project-image"
+                    loading="lazy"
+                  />
                 ) : (
-                  <a 
-                    href={project.demo} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-image-link project-live-preview"
-                  >
-                    <div className="live-preview-placeholder">
-                      <FiExternalLink size={40} />
-                      <p>Live Preview</p>
-                    </div>
-                  </a>
+                  <div className="project-proof-panel">
+                    <FiFileText size={34} />
+                    <span>{project.proof}</span>
+                  </div>
                 )}
               </div>
+
               <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
+                <div className="project-heading">
+                  <span className="proof-badge">{project.proof}</span>
+                  <h3 className="project-title">{project.title}</h3>
+                </div>
+                <p className="project-description">{project.summary}</p>
+                <p className="project-impact">{project.impact}</p>
+
                 <div className="project-technologies">
-                  {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
+                  {project.technologies.map((tech) => (
+                    <span key={tech} className="tech-tag">{tech}</span>
                   ))}
                 </div>
+
                 <div className="project-links">
-                  {project.github && project.github !== 'https://github.com/kelvinmmuia' && (
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="GitHub"
+                      aria-label={`${project.title} GitHub repository`}
                       className="project-link"
-                      title="View on GitHub"
+                      title="View public repository"
                     >
                       <FiGithub />
                     </a>
                   )}
-                  <a 
-                    href={project.demo} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label="Live Demo"
-                    className="project-link"
-                    title="View Live Demo"
-                  >
-                    <FiExternalLink />
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.title} live demo or proof link`}
+                      className="project-link"
+                      title="View proof link"
+                    >
+                      <FiExternalLink />
+                    </a>
+                  )}
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

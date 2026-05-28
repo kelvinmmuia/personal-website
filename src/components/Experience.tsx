@@ -7,37 +7,33 @@ const experiences = [
     company: 'UvoCorp.com',
     period: 'Nov 2022 - Present',
     description: [
-      'Perform end-to-end data analysis on projects using R, SQL, and Python',
-      'Extract insights and provide data-driven solutions for clients',
-      'Create technical documentation and reports for data analysis projects',
-      'Collaborate with cross-functional teams on data-driven initiatives'
-    ]
+      'Produce technical data-analysis solutions, code explanations, reports, and documentation across R, Python, SQL, Excel, and notebook workflows',
+      'Review requirements, verify calculations and code logic, clean/query data, build visualizations, and explain methods clearly',
+      'Translate ambiguous prompts into reproducible reasoning and stakeholder-ready written outputs',
+    ],
   },
   {
     id: 2,
-    role: 'Freelancer Data Analyst & Web Developer',
-    company: 'Fiverr.com',
+    role: 'Freelance Data Analyst & Web Developer',
+    company: 'Fiverr.com / Independent Client Work',
     period: 'Aug 2018 - Present',
     description: [
-      'Perform end-to-end data analysis on diverse client projects using R, SQL, and Python',
-      'Develop web applications and private projects for clients using React, JavaScript, and TypeScript',
-      'Extract actionable insights and provide solutions for business problems',
-      'Build interactive dashboards, data visualizations, and responsive web applications',
-      'Maintain high ratings through quality work and timely delivery'
-    ]
+      'Deliver analytics and development projects using R, Python, SQL, Excel, PostgreSQL, MySQL, SQLite, React, TypeScript, PHP, and GitHub',
+      'Build data apps, dashboards, database-backed tools, and private commercial products from ambiguous client briefs',
+      'Publish public projects in machine learning, forecasting, decision theory, geospatial analysis, Kenyan public data, and database applications',
+    ],
   },
   {
     id: 3,
     role: 'Content Supervisor',
     company: 'Kenya National Bureau of Statistics',
-    period: 'June 2019 - Aug 2019',
+    period: 'Jun 2019 - Aug 2019',
     description: [
-      'Trained and oversaw the work of six Enumerators in the Kenya Population and Housing Census 2019',
-      'Ensured data quality and accuracy in census data collection',
+      'Trained and oversaw six enumerators during the Kenya Population and Housing Census 2019',
+      'Verified sampled field data for consistency and accuracy',
       'Managed field operations in Kilungu Ward, Makueni County',
-      'Contributed to Kenya\'s official demographic data collection'
-    ]
-  }
+    ],
+  },
 ];
 
 const Experience: FC<{ id: string }> = ({ id }) => {
@@ -56,9 +52,9 @@ const Experience: FC<{ id: string }> = ({ id }) => {
                 <span className="period">{exp.period}</span>
               </div>
               <ul className="experience-description">
-                {exp.description.map((item, index) => (
-                  <li key={index}>
-                    <span className="bullet">▹</span> {item}
+                {exp.description.map((item) => (
+                  <li key={item}>
+                    <span className="bullet">&gt;</span> {item}
                   </li>
                 ))}
               </ul>

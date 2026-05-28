@@ -20,22 +20,21 @@ const Hero: FC<{ id: string }> = ({ id }) => {
           <div className="hero-content">
             <h4 className="greeting">Hi, my name is</h4>
             <h1 className="name">Kelvin Mwaka Muia.</h1>
-            <h2 className="title">Data Scientist & Data Analyst based in Nairobi, Kenya.</h2>
+            <h2 className="title">Data Analyst and full-stack data developer for teams that need useful data products.</h2>
             <p className="description">
-              I'm a passionate data scientist and analyst with 6+ years of experience building data-driven applications 
-              and interactive visualizations. I specialize in end-to-end data analysis, combining statistical modeling, 
-              machine learning, and modern web technologies to create impactful solutions for real-world problems.
+              I turn messy datasets, ambiguous briefs, and operational workflows into analysis, dashboards, reports, and working data apps.
+              My strongest work combines R, Python, SQL, React, TypeScript, technical writing, and client-facing delivery from Nairobi, Kenya.
             </p>
             <div className="cta-buttons">
               <a 
-                href="#contact" 
+                href="#projects" 
                 className="btn btn-primary"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Get In Touch
+                View selected work
               </a>
               <a 
                 href="https://github.com/kelvinmmuia" 

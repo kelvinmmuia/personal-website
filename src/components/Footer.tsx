@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
@@ -39,7 +39,7 @@ const Footer: FC = () => {
           </div>
           
           <p className="footer-text">
-            Designed & Built with <FaHeart className="heart-icon" /> by Kelvin Mwaka Muia
+            Built by Kelvin Mwaka Muia
           </p>
           
           <p className="copyright">
