@@ -607,13 +607,6 @@ img {
   flex: 1;
 }
 
-.project-impact {
-  color: var(--light-gray);
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 18px;
-}
-
 .project-technologies {
   display: flex;
   flex-wrap: wrap;

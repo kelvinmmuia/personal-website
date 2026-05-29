@@ -5,7 +5,6 @@ type Project = {
   id: number;
   title: string;
   summary: string;
-  impact: string;
   technologies: string[];
   github?: string;
   demo?: string;
@@ -18,7 +17,6 @@ const projects: Project[] = [
     id: 1,
     title: 'Kamwifi',
     summary: 'Commercial WiFi monetization and operations product for hotspot access, customer workflows, and network-admin visibility.',
-    impact: 'Private product proof: founded and built the product architecture, business workflow, and implementation direction. Available to discuss architecture without exposing private code.',
     technologies: ['Product', 'MikroTik', 'Payments', 'Dashboards', 'Operations'],
     demo: 'https://kamwifi.co.ke/',
     proof: 'Private product',
@@ -26,17 +24,15 @@ const projects: Project[] = [
   {
     id: 2,
     title: 'CLOApp - Course Learning Outcomes',
-    summary: 'AI-assisted education workflow for course learning outcomes, curriculum mapping, and accreditation-style reporting.',
-    impact: 'Relevant to EdTech, AI evaluation, structured writing, and data-backed workflow design.',
-    technologies: ['React', 'TypeScript', 'AI workflows', 'Education', 'Vercel'],
-    demo: 'https://cloapp.vercel.app/',
+    summary: 'No signup. No login. Start mapping. Build course learning outcomes, weekly topics, assessments, and coverage matrices in a focused workspace with exportable outputs.',
+    technologies: ['React', 'TypeScript', 'Curriculum mapping', 'Exports', 'Vercel'],
+    demo: 'https://cloapp-gamma.vercel.app/',
     proof: 'Live app',
   },
   {
     id: 3,
     title: 'Movie Database Management System',
     summary: 'Streamlit and SQLite database application for movie catalog management, relationships, and search workflows.',
-    impact: 'Shows practical data-app development: database modeling, UI workflows, and deployable Python tooling.',
     technologies: ['Python', 'Streamlit', 'SQLite', 'Data app', 'Search'],
     github: 'https://github.com/kelvinmmuia/MoviesDBapp',
     demo: 'https://moviesdbapp.streamlit.app/',
@@ -46,7 +42,6 @@ const projects: Project[] = [
     id: 4,
     title: 'SVM Custom Implementation',
     summary: 'Support Vector Machine workflows for regression and classification with Linear, RBF, Polynomial, and Sigmoid kernels.',
-    impact: 'Public proof of ML literacy, technical documentation, model evaluation, and Python implementation.',
     technologies: ['Python', 'Machine Learning', 'NumPy', 'Pandas', 'Model evaluation'],
     github: 'https://github.com/kelvinmmuia/SVM-python-custom',
     demo: 'https://github.com/kelvinmmuia/SVM-python-custom',
@@ -57,7 +52,6 @@ const projects: Project[] = [
     id: 5,
     title: 'Kenyan Climate Data Timeseries',
     summary: 'Forecasting and visualization workflows for Kenyan rainfall and temperature data.',
-    impact: 'Demonstrates preprocessing, exploratory analysis, time-series reasoning, and interpretable reporting.',
     technologies: ['Python', 'R', 'Forecasting', 'Visualization', 'Data cleaning'],
     github: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
     demo: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries/blob/main/annfittedvsactualvalues.png',
@@ -68,7 +62,6 @@ const projects: Project[] = [
     id: 6,
     title: 'KPHC & Kenyan Counties Data',
     summary: 'Interactive county-level visualization of Kenyan demographic and economic indicators.',
-    impact: 'Strong public-sector data proof: local context, census data, geospatial presentation, and quality-controlled outputs.',
     technologies: ['R', 'Leaflet', 'Geospatial', 'Public data', 'Dashboards'],
     github: 'https://github.com/kelvinmmuia/KPHC2019andKenyanCountiesData',
     demo: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/',
@@ -79,7 +72,6 @@ const projects: Project[] = [
     id: 7,
     title: 'Kenya Employment Analysis',
     summary: 'Analysis of employment trends in Kenya from 2010 to 2019 across sectors and reporting outputs.',
-    impact: 'Shows reproducible analysis, data storytelling, and economic-data interpretation.',
     technologies: ['R', 'Python', 'Statistics', 'Visualization', 'Reporting'],
     github: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
     demo: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019/blob/main/total_estimated_employment.pdf',
@@ -90,7 +82,6 @@ const projects: Project[] = [
     id: 8,
     title: 'Optimal Stopping Problem',
     summary: 'Decision-theory explanation and implementation of the Secretary Problem and house-hunting scenario.',
-    impact: 'Useful proof for technical writing, statistics communication, and AI/data evaluation work.',
     technologies: ['Statistics', 'Algorithms', 'Explanation', 'HTML', 'Python'],
     github: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
     demo: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
@@ -115,7 +106,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
           <span>03.</span> Selected Work
         </h2>
         <p className="section-intro">
-          Public repos, live apps, and private commercial work framed around what a hiring team can evaluate: the problem, stack, and proof of delivery.
+          A few public projects, live tools, and private products I can discuss without exposing client code.
         </p>
 
         <div className="projects-grid">
@@ -143,7 +134,6 @@ const Projects: FC<{ id: string }> = ({ id }) => {
                   <h3 className="project-title">{project.title}</h3>
                 </div>
                 <p className="project-description">{project.summary}</p>
-                <p className="project-impact">{project.impact}</p>
 
                 <div className="project-technologies">
                   {project.technologies.map((tech) => (
