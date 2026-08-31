@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FiGithub, FiExternalLink, FiFileText } from 'react-icons/fi';
+import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 type Project = {
   id: number;
@@ -19,6 +19,7 @@ const projects: Project[] = [
     summary: 'A privacy-friendly schedule parser that turns screenshots or pasted shift text into editable events, a weekly summary, and an import-ready calendar file.',
     technologies: ['TypeScript', 'React', 'OCR workflow', 'Calendar export', 'Vercel'],
     demo: 'https://shiftsnap-phi.vercel.app/',
+    image: '/shiftsnap-landing.png',
     proof: 'Live app · private source',
   },
   {
@@ -27,18 +28,29 @@ const projects: Project[] = [
     summary: 'A commercial hotspot platform connecting customer access, payments, network operations, and admin visibility for WiFi operators.',
     technologies: ['Product', 'MikroTik', 'Payments', 'Dashboards', 'Operations'],
     demo: 'https://kamwifi.co.ke/',
+    image: '/kamwifi-landing.png',
     proof: 'Private product',
   },
   {
     id: 3,
+    title: 'KAMWI Horizon',
+    summary: 'Invite-native lending infrastructure for small communities, with identity-gated onboarding, trust-aware credit workflows, wallet movement, and verifiable ledger evidence.',
+    technologies: ['Product', 'Lending workflows', 'Trust scoring', 'Audit ledger', 'Identity controls'],
+    demo: 'https://www.kamwi.co.ke/',
+    image: '/kamwi-landing.png',
+    proof: 'Private product',
+  },
+  {
+    id: 4,
     title: 'CLOApp - Course Learning Outcomes',
     summary: 'A focused curriculum-mapping workspace for aligning learning outcomes, weekly topics, assessments, and coverage, with no account required.',
     technologies: ['React', 'TypeScript', 'Curriculum mapping', 'Exports', 'Vercel'],
     demo: 'https://cloapp-gamma.vercel.app/',
+    image: '/cloapp-landing.png',
     proof: 'Live app · private source',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Movie Database Management System',
     summary: 'A deployed Streamlit and SQLite application for managing a relational movie catalogue and searching across connected records.',
     technologies: ['Python', 'Streamlit', 'SQLite', 'Data app', 'Search'],
@@ -47,7 +59,7 @@ const projects: Project[] = [
     proof: 'Public repo',
   },
   {
-    id: 5,
+    id: 6,
     title: 'SVM Custom Implementation',
     summary: 'Support Vector Machine workflows for regression and classification with Linear, RBF, Polynomial, and Sigmoid kernels.',
     technologies: ['Python', 'Machine Learning', 'NumPy', 'Pandas', 'Model evaluation'],
@@ -57,7 +69,7 @@ const projects: Project[] = [
     proof: 'Public repo',
   },
   {
-    id: 6,
+    id: 7,
     title: 'KPHC & Kenyan Counties Data',
     summary: 'Interactive county-level visualization of Kenyan demographic and economic indicators.',
     technologies: ['R', 'Leaflet', 'Geospatial', 'Public data', 'Dashboards'],
@@ -84,7 +96,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
           <span>03.</span> Selected Work
         </h2>
         <p className="section-intro">
-          Six projects that show how I move from a real problem to a usable product, analysis, or deployed data application.
+          Seven projects that show how I move from a real problem to a usable product, analysis, or deployed data application.
         </p>
 
         <div className="projects-grid">
@@ -100,7 +112,8 @@ const Projects: FC<{ id: string }> = ({ id }) => {
                   />
                 ) : (
                   <div className="project-proof-panel">
-                    <FiFileText size={34} />
+                    <span className="project-monogram" aria-hidden="true">{project.title.slice(0, 2).toUpperCase()}</span>
+                    <strong>{project.title}</strong>
                     <span>{project.proof}</span>
                   </div>
                 )}
