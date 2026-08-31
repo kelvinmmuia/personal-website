@@ -54,23 +54,14 @@ const Contact: FC<{ id: string }> = ({ id }) => {
         <div className="contact-content">
           <div className="contact-text">
             <p>
-              I am open to data analyst, BI/reporting, full-stack data app, AI evaluation, consultancy, and contractor roles.
-              The fastest way to reach me is email or phone.
+              I am interested in data analyst, analytics engineering, technical product, and software roles where I can combine analysis with implementation.
+              I also take on carefully scoped contract work. The fastest way to reach me is email.
             </p>
             
             <div className="contact-info">
               <p><strong>Email:</strong></p>
               <a href="mailto:kelvinmwaka@gmail.com" className="email-link">
                 kelvinmwaka@gmail.com
-              </a>
-              <br />
-              <a href="mailto:kelvinmwakamuia@gmail.com" className="email-link">
-                kelvinmwakamuia@gmail.com
-              </a>
-              
-              <p style={{ marginTop: '20px' }}><strong>Phone:</strong></p>
-              <a href="tel:+254728450288" className="email-link">
-                +254 728 450 288
               </a>
               
               <p style={{ marginTop: '20px' }}><strong>Location:</strong></p>

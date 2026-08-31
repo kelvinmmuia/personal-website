@@ -9,53 +9,51 @@ type Project = {
   github?: string;
   demo?: string;
   image?: string;
-  proof: 'Public repo' | 'Live app' | 'Private product';
+  proof: 'Public repo' | 'Live app · private source' | 'Private product';
 };
 
 const projects: Project[] = [
   {
     id: 1,
+    title: 'ShiftSnap',
+    summary: 'A privacy-friendly schedule parser that turns screenshots or pasted shift text into editable events, a weekly summary, and an import-ready calendar file.',
+    technologies: ['TypeScript', 'React', 'OCR workflow', 'Calendar export', 'Vercel'],
+    demo: 'https://shiftsnap-phi.vercel.app/',
+    proof: 'Live app · private source',
+  },
+  {
+    id: 2,
     title: 'Kamwifi',
-    summary: 'Commercial WiFi monetization and operations product for hotspot access, customer workflows, and network-admin visibility.',
+    summary: 'A commercial hotspot platform connecting customer access, payments, network operations, and admin visibility for WiFi operators.',
     technologies: ['Product', 'MikroTik', 'Payments', 'Dashboards', 'Operations'],
     demo: 'https://kamwifi.co.ke/',
     proof: 'Private product',
   },
   {
-    id: 2,
+    id: 3,
     title: 'CLOApp - Course Learning Outcomes',
-    summary: 'No signup. No login. Start mapping. Build course learning outcomes, weekly topics, assessments, and coverage matrices in a focused workspace with exportable outputs.',
+    summary: 'A focused curriculum-mapping workspace for aligning learning outcomes, weekly topics, assessments, and coverage, with no account required.',
     technologies: ['React', 'TypeScript', 'Curriculum mapping', 'Exports', 'Vercel'],
     demo: 'https://cloapp-gamma.vercel.app/',
-    proof: 'Live app',
-  },
-  {
-    id: 3,
-    title: 'Movie Database Management System',
-    summary: 'Streamlit and SQLite database application for movie catalog management, relationships, and search workflows.',
-    technologies: ['Python', 'Streamlit', 'SQLite', 'Data app', 'Search'],
-    github: 'https://github.com/kelvinmmuia/MoviesDBapp',
-    demo: 'https://moviesdbapp.streamlit.app/',
-    proof: 'Live app',
+    proof: 'Live app · private source',
   },
   {
     id: 4,
+    title: 'Movie Database Management System',
+    summary: 'A deployed Streamlit and SQLite application for managing a relational movie catalogue and searching across connected records.',
+    technologies: ['Python', 'Streamlit', 'SQLite', 'Data app', 'Search'],
+    github: 'https://github.com/kelvinmmuia/MoviesDBapp',
+    demo: 'https://moviesdbapp.streamlit.app/',
+    proof: 'Public repo',
+  },
+  {
+    id: 5,
     title: 'SVM Custom Implementation',
     summary: 'Support Vector Machine workflows for regression and classification with Linear, RBF, Polynomial, and Sigmoid kernels.',
     technologies: ['Python', 'Machine Learning', 'NumPy', 'Pandas', 'Model evaluation'],
     github: 'https://github.com/kelvinmmuia/SVM-python-custom',
     demo: 'https://github.com/kelvinmmuia/SVM-python-custom',
     image: '/SVM_Custom_Implementation.png',
-    proof: 'Public repo',
-  },
-  {
-    id: 5,
-    title: 'Kenyan Climate Data Timeseries',
-    summary: 'Forecasting and visualization workflows for Kenyan rainfall and temperature data.',
-    technologies: ['Python', 'R', 'Forecasting', 'Visualization', 'Data cleaning'],
-    github: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
-    demo: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries/blob/main/annfittedvsactualvalues.png',
-    image: '/Kenyan_Climate_Data_Timeseries.png',
     proof: 'Public repo',
   },
   {
@@ -66,26 +64,6 @@ const projects: Project[] = [
     github: 'https://github.com/kelvinmmuia/KPHC2019andKenyanCountiesData',
     demo: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/',
     image: '/Kenya_Population_Housing_Census.png',
-    proof: 'Live app',
-  },
-  {
-    id: 7,
-    title: 'Kenya Employment Analysis',
-    summary: 'Analysis of employment trends in Kenya from 2010 to 2019 across sectors and reporting outputs.',
-    technologies: ['R', 'Python', 'Statistics', 'Visualization', 'Reporting'],
-    github: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
-    demo: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019/blob/main/total_estimated_employment.pdf',
-    image: '/Kenya_Employment_Analysis.png',
-    proof: 'Public repo',
-  },
-  {
-    id: 8,
-    title: 'Optimal Stopping Problem',
-    summary: 'Decision-theory explanation and implementation of the Secretary Problem and house-hunting scenario.',
-    technologies: ['Statistics', 'Algorithms', 'Explanation', 'HTML', 'Python'],
-    github: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
-    demo: 'https://github.com/kelvinmmuia/TheOptimalStoppingProblem',
-    image: '/Optimal_Stopping_Problem.png',
     proof: 'Public repo',
   },
 ];
@@ -106,7 +84,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
           <span>03.</span> Selected Work
         </h2>
         <p className="section-intro">
-          A few public projects, live tools, and private products I can discuss without exposing client code.
+          Six projects that show how I move from a real problem to a usable product, analysis, or deployed data application.
         </p>
 
         <div className="projects-grid">

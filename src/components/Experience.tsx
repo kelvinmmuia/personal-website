@@ -3,24 +3,24 @@ import { FC } from 'react';
 const experiences = [
   {
     id: 1,
-    role: 'Technical Writer - Data Analyst',
-    company: 'UvoCorp.com',
-    period: 'Nov 2022 - Present',
+    role: 'Independent Data & Software Consultant',
+    company: 'Remote client work',
+    period: 'Aug 2018 - Present',
     description: [
-      'Produce technical data-analysis solutions, code explanations, reports, and documentation across R, Python, SQL, Excel, and notebook workflows',
-      'Review requirements, verify calculations and code logic, clean/query data, build visualizations, and explain methods clearly',
-      'Translate ambiguous prompts into reproducible reasoning and stakeholder-ready written outputs',
+      'Turn loosely defined requirements into scoped analytics, automation, database, and web-app deliverables',
+      'Work across Python, R, SQL, Excel, React, TypeScript, PostgreSQL, and SQLite, selecting the smallest practical stack for each problem',
+      'Deliver reproducible analysis, readable documentation, and maintainable handover materials for remote clients',
     ],
   },
   {
     id: 2,
-    role: 'Freelance Data Analyst & Web Developer',
-    company: 'Fiverr.com / Independent Client Work',
-    period: 'Aug 2018 - Present',
+    role: 'Independent Product Builder',
+    company: 'ShiftSnap, Kamwifi & focused web tools',
+    period: '2023 - Present',
     description: [
-      'Deliver analytics and development projects using R, Python, SQL, Excel, PostgreSQL, MySQL, SQLite, React, TypeScript, PHP, and GitHub',
-      'Build data apps, dashboards, database-backed tools, and private commercial products from ambiguous client briefs',
-      'Publish public projects in machine learning, forecasting, decision theory, geospatial analysis, Kenyan public data, and database applications',
+      'Design and ship small products around real workflows, including schedule-to-calendar conversion and hotspot operations',
+      'Own product framing, interface design, implementation, deployment, and iteration',
+      'Balance useful automation with review steps where source data or machine extraction can be imperfect',
     ],
   },
   {

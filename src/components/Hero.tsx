@@ -18,12 +18,11 @@ const Hero: FC<{ id: string }> = ({ id }) => {
           </div>
           
           <div className="hero-content">
-            <h4 className="greeting">Hi, my name is</h4>
+            <div className="availability"><span aria-hidden="true" /> Open to remote and Nairobi-based roles</div>
             <h1 className="name">Kelvin Mwaka Muia.</h1>
-            <h2 className="title">Data Analyst and full-stack data developer for teams that need useful data products.</h2>
+            <h2 className="title">I build data tools and web products that turn messy inputs into useful decisions.</h2>
             <p className="description">
-              I turn messy datasets, ambiguous briefs, and operational workflows into analysis, dashboards, reports, and working data apps.
-              My strongest work combines R, Python, SQL, React, TypeScript, technical writing, and client-facing delivery from Nairobi, Kenya.
+              Nairobi-based data analyst and software developer working across Python, R, SQL, React, and TypeScript—from analysis and automation to production-ready interfaces.
             </p>
             <div className="cta-buttons">
               <a 
@@ -34,7 +33,7 @@ const Hero: FC<{ id: string }> = ({ id }) => {
                   document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                View selected work
+                Explore selected work
               </a>
               <a 
                 href="https://github.com/kelvinmmuia" 
