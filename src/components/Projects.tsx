@@ -36,7 +36,7 @@ const projects: Project[] = [
     id: 3,
     title: 'Kenyan Climate Time Series',
     summary: 'Rainfall and temperature data explored and presented through charts and forecasting work.',
-    technologies: ['Python', 'R', 'Forecasting', 'Public data'],
+    technologies: ['R', 'Forecasting', 'Public data', 'Time series'],
     github: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
     image: '/Kenyan_Climate_Data_Timeseries.png',
     proof: 'Public repo',
