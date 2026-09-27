@@ -20,9 +20,9 @@ const Hero: FC<{ id: string }> = ({ id }) => {
           <div className="hero-content">
             <div className="availability"><span aria-hidden="true" /> Open to remote and Nairobi-based roles</div>
             <h1 className="name">Kelvin Mwaka Muia.</h1>
-            <h2 className="title">I build data tools and web products that turn messy inputs into useful decisions.</h2>
+            <h2 className="title">Data analyst and software developer building clear reports and usable tools.</h2>
             <p className="description">
-              Nairobi-based data analyst and software developer working across Python, R, SQL, React, and TypeScript—from analysis and automation to production-ready interfaces.
+              Based in Nairobi, I use SQL, Python, R, and Excel to analyse data and explain findings. I also build dashboards and database-backed products with Shiny, Streamlit, React, and TypeScript.
             </p>
             <div className="cta-buttons">
               <a 

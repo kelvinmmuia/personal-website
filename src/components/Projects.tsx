@@ -15,39 +15,40 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'ShiftSnap',
-    summary: 'A privacy-friendly schedule parser that turns screenshots or pasted shift text into editable events, a weekly summary, and an import-ready calendar file.',
-    technologies: ['TypeScript', 'React', 'OCR workflow', 'Calendar export', 'Vercel'],
-    demo: 'https://shiftsnap-phi.vercel.app/',
-    image: '/shiftsnap-landing.png',
-    proof: 'Live app · private source',
+    title: 'KPHC & Kenyan Counties Data',
+    summary: 'Interactive county-level comparison of Kenyan demographic and economic indicators built from public data.',
+    technologies: ['R', 'Leaflet', 'Geospatial', 'Public data', 'Dashboards'],
+    github: 'https://github.com/kelvinmmuia/KPHC2019andKenyanCountiesData',
+    demo: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/',
+    image: '/Kenya_Population_Housing_Census.png',
+    proof: 'Public repo',
   },
   {
     id: 2,
+    title: 'Kenyan Employment Analysis',
+    summary: 'Public employment data prepared for year-by-year comparison and communication of labour-market trends.',
+    technologies: ['R', 'Time series', 'Public data', 'Data visualisation'],
+    github: 'https://github.com/kelvinmmuia/Total_estimated_employment_in_kenya_2010_2019',
+    image: '/Kenya_Employment_Analysis.png',
+    proof: 'Public repo',
+  },
+  {
+    id: 3,
+    title: 'Kenyan Climate Time Series',
+    summary: 'Rainfall and temperature data explored and presented through charts and forecasting work.',
+    technologies: ['Python', 'R', 'Forecasting', 'Public data'],
+    github: 'https://github.com/kelvinmmuia/Kenyan_Climate_Data_Timeseries',
+    image: '/Kenyan_Climate_Data_Timeseries.png',
+    proof: 'Public repo',
+  },
+  {
+    id: 4,
     title: 'Kamwifi',
-    summary: 'A commercial hotspot platform connecting customer access, payments, network operations, and admin visibility for WiFi operators.',
+    summary: 'A commercial hotspot platform connecting customer access, payments, network operations, and admin reporting for WiFi operators.',
     technologies: ['Product', 'MikroTik', 'Payments', 'Dashboards', 'Operations'],
     demo: 'https://kamwifi.co.ke/',
     image: '/kamwifi-landing.png',
     proof: 'Private product',
-  },
-  {
-    id: 3,
-    title: 'KAMWI Horizon',
-    summary: 'Invite-native lending infrastructure for small communities, with identity-gated onboarding, trust-aware credit workflows, wallet movement, and verifiable ledger evidence.',
-    technologies: ['Product', 'Lending workflows', 'Trust scoring', 'Audit ledger', 'Identity controls'],
-    demo: 'https://www.kamwi.co.ke/',
-    image: '/kamwi-landing.png',
-    proof: 'Private product',
-  },
-  {
-    id: 4,
-    title: 'CLOApp - Course Learning Outcomes',
-    summary: 'A focused curriculum-mapping workspace for aligning learning outcomes, weekly topics, assessments, and coverage, with no account required.',
-    technologies: ['React', 'TypeScript', 'Curriculum mapping', 'Exports', 'Vercel'],
-    demo: 'https://cloapp-gamma.vercel.app/',
-    image: '/cloapp-landing.png',
-    proof: 'Live app · private source',
   },
   {
     id: 5,
@@ -70,13 +71,30 @@ const projects: Project[] = [
   },
   {
     id: 7,
-    title: 'KPHC & Kenyan Counties Data',
-    summary: 'Interactive county-level visualization of Kenyan demographic and economic indicators.',
-    technologies: ['R', 'Leaflet', 'Geospatial', 'Public data', 'Dashboards'],
-    github: 'https://github.com/kelvinmmuia/KPHC2019andKenyanCountiesData',
-    demo: 'https://kelvinmwakamuia.shinyapps.io/KPHC2019andKenyanCountiesData/',
-    image: '/Kenya_Population_Housing_Census.png',
-    proof: 'Public repo',
+    title: 'ShiftSnap',
+    summary: 'A privacy-friendly schedule parser that turns screenshots or pasted shift text into editable events, a weekly summary, and an import-ready calendar file.',
+    technologies: ['TypeScript', 'React', 'OCR workflow', 'Calendar export', 'Vercel'],
+    demo: 'https://shiftsnap-phi.vercel.app/',
+    image: '/shiftsnap-landing.png',
+    proof: 'Live app · private source',
+  },
+  {
+    id: 8,
+    title: 'KAMWI Horizon',
+    summary: 'Invite-native lending infrastructure for small communities, with identity-gated onboarding, trust-aware credit workflows, wallet movement, and verifiable ledger evidence.',
+    technologies: ['Product', 'Lending workflows', 'Trust scoring', 'Audit ledger', 'Identity controls'],
+    demo: 'https://www.kamwi.co.ke/',
+    image: '/kamwi-landing.png',
+    proof: 'Private product',
+  },
+  {
+    id: 9,
+    title: 'CLOApp - Course Learning Outcomes',
+    summary: 'A focused curriculum-mapping workspace for aligning learning outcomes, weekly topics, assessments, and coverage, with no account required.',
+    technologies: ['React', 'TypeScript', 'Curriculum mapping', 'Exports', 'Vercel'],
+    demo: 'https://cloapp-gamma.vercel.app/',
+    image: '/cloapp-landing.png',
+    proof: 'Live app · private source',
   },
 ];
 
@@ -96,7 +114,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
           <span>03.</span> Selected Work
         </h2>
         <p className="section-intro">
-          Seven projects that show how I move from a real problem to a usable product, analysis, or deployed data application.
+          Public data analysis, deployed data applications, and products built around real operational workflows.
         </p>
 
         <div className="projects-grid">
